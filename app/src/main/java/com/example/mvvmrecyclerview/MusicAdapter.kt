@@ -24,8 +24,9 @@ class MusicAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolders, position: Int) {
-        holder.actorMusic.text = arrayList[position].actor
         holder.nameMusic.text = arrayList[position].name
+        holder.actorMusic.text = arrayList[position].actor
+
     }
 
     override fun getItemCount(): Int {
