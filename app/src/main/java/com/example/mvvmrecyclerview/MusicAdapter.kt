@@ -8,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class MusicAdapter(
-    private val arrayList: ArrayList<MusicModel>,
+    musicViewModel: MusicViewModel,
+    private val arrayList1: ArrayList<MusicModel>,
     private val context: Context
 ) : RecyclerView.Adapter<MusicAdapter.ViewHolders>() {
 
@@ -24,12 +25,12 @@ class MusicAdapter(
     }
 
     override fun onBindViewHolder(holder: ViewHolders, position: Int) {
-        holder.nameMusic.text = arrayList[position].name
-        holder.actorMusic.text = arrayList[position].actor
+        holder.nameMusic.text = arrayList1[position].name
+        holder.actorMusic.text = arrayList1[position].actor
 
     }
 
     override fun getItemCount(): Int {
-        return arrayList.size
+        return arrayList1.size
     }
 }

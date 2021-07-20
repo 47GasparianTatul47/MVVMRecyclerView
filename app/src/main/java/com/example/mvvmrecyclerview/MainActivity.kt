@@ -2,17 +2,11 @@ package com.example.mvvmrecyclerview
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import java.time.LocalTime.of
-import java.util.List.of
-import java.util.Map.of
-import java.util.OptionalDouble.of
-import java.util.Set.of
 
 class MainActivity : AppCompatActivity() {
 
